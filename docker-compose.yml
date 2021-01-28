@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  teeworlds:
+    build: .
+    environment:
+      SV_NAME: "firetonton"
+      PASSWORD: palindrome
+    ports:
+      - "8303:8303"
+      - "8303:8303/udp"
